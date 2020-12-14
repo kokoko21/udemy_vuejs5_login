@@ -39,7 +39,7 @@ export default new Vuex.Store({
     },
     login({ dispatch }, authData) {
       axios
-        .post('/accounts:signInWithPassword?key=AIzaSyCKBc-j4rC1SoOjdXJ3QPdwYy7IvzUHjag', // firebaseのウェブAPIキー
+        .post('/accounts:signInWithPassword?key=********************', // firebaseのウェブAPIキー
           {
             email: authData.email,
             password: authData.password,
@@ -64,7 +64,7 @@ export default new Vuex.Store({
     },
     async refreshIdToken({ dispatch }, refreshToken) {
       axiosRefresh.post(
-        '/token?key=AIzaSyCKBc-j4rC1SoOjdXJ3QPdwYy7IvzUHjag',
+        '/token?key=***********************',
         {
           grant_type: 'refresh_token',
           refresh_token: refreshToken
@@ -79,7 +79,7 @@ export default new Vuex.Store({
     },
     register({ dispatch }, authData) {
       axios
-        .post('/accounts:signUp?key=AIzaSyCKBc-j4rC1SoOjdXJ3QPdwYy7IvzUHjag',
+        .post('/accounts:signUp?key=********************',
           {
             email: authData.email,
             password: authData.password,
