@@ -6,7 +6,7 @@ import store from './store';
 
 Vue.config.productionTip = false;
 
-axios.defaults.baseURL = 'https://firestore.googleapis.com/v1/projects/vuejs-axios-15c6b/databases/(default)/documents';
+axios.defaults.baseURL = 'https://firestore.googleapis.com/v1/projects/vue*************/databases/(default)/documents';
 
 // axios.interceptorts.request.use(
 //   config => {
